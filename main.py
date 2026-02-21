@@ -1,5 +1,8 @@
 import whisper
+import imageio_ffmpeg as ffmpeg
+import os
 
+os.environ["PATH"] += os.pathsep + os.path.dirname(ffmpeg.get_ffmpeg_exe())
 # ---------------------------
 # Lazy Load Whisper Model
 # ---------------------------
